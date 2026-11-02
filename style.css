@@ -290,15 +290,14 @@ p { margin: 0; }
 .row {
   display: flex;
   flex-wrap: wrap;
-  align-items: baseline;
-  gap: 12px 32px;
+  align-items: center;
+  gap: 12px 28px;
   padding: 30px 0;
   border-top: 1px solid var(--line);
   transition: padding-left .25s ease;
 }
 .row:hover { padding-left: 12px; }
-.row .num { flex: 0 0 88px; font-family: var(--serif); font-style: italic; font-size: 48px; line-height: 1; color: var(--green); }
-.row-art { flex: none; align-self: center; }
+.row-art { flex: none; }
 .row h3 { flex: 1 1 280px; font-size: 30px; line-height: 1.2; }
 .row p { flex: 1 1 420px; font-size: 17px; line-height: 1.6; color: var(--ink-2); }
 
@@ -548,7 +547,9 @@ p { margin: 0; }
   .section { padding: 72px 0; }
   .about-grid { padding-top: 72px; padding-bottom: 72px; }
   .contact-inner { padding-top: 80px; padding-bottom: 80px; }
-  .row .num { flex-basis: 100%; font-size: 40px; }
+  .row { gap: 12px 16px; }
+  .row h3 { flex-basis: 0; font-size: 26px; }
+  .row p { flex-basis: 100%; font-size: 16px; }
   .faq summary { font-size: 20px; padding: 18px 20px; }
   .faq details p { padding: 0 20px 20px; }
 }
