@@ -371,9 +371,10 @@ p { margin: 0; }
   list-style: none;
   display: grid;
   grid-template-columns: repeat(5, minmax(0, 1fr));
-  gap: 16px;
+  gap: 30px;
 }
 .step {
+  position: relative;
   border: 1px solid var(--line);
   border-radius: 14px;
   background: var(--paper);
@@ -392,6 +393,18 @@ p { margin: 0; }
 .step-first .step-label { color: var(--gold); }
 .step-first h3 { color: var(--bg); }
 .step-first p { color: var(--pale); }
+.step:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: calc(100% + 1px);
+  width: 30px;
+  height: 2px;
+  margin-top: -1px;
+  background-image: repeating-linear-gradient(90deg, var(--amber-2) 0 6px, transparent 6px 10px);
+  background-size: 10px 2px;
+  animation: flow-x .8s linear infinite;
+}
 
 /* Principles */
 .pillars { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(380px, 100%), 1fr)); gap: 56px 80px; }
@@ -514,7 +527,17 @@ p { margin: 0; }
 
 /* Responsive */
 @media (max-width: 1080px) {
-  .steps { grid-template-columns: repeat(auto-fit, minmax(min(220px, 100%), 1fr)); }
+  .steps { grid-template-columns: 1fr; }
+  .step:not(:last-child)::after {
+    top: calc(100% + 1px);
+    left: 50%;
+    width: 2px;
+    height: 30px;
+    margin: 0 0 0 -1px;
+    background-image: repeating-linear-gradient(180deg, var(--amber-2) 0 6px, transparent 6px 10px);
+    background-size: 2px 10px;
+    animation-name: flow-y;
+  }
   .faq-grid { grid-template-columns: 1fr; }
 }
 
