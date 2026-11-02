@@ -20,14 +20,16 @@ Every tracked path in this repo.
 | `README.md` | How to preview the site locally |
 | `_config.yml` | Keeps `CLAUDE.md`, `MEMORY.md`, and `README.md` off the published site |
 | `favicon.svg` | The tab icon: a cream J on green with an amber dot |
-| `img/` | Site images. `jimmy.jpg` is the About photo, cropped to 4:5 with its location data stripped. `og.png` is the 1200x630 link preview image |
+| `img/` | Site images. `jimmy.jpg` is the About photo, full body at 751x1661 with its location data stripped. Do not crop it. `og.png` is the 1200x630 link preview image |
 | `index.html` | The whole site |
 | `style.css` | All styles. Colors and fonts are tokens on `:root` |
 
 ## Guardrails
 
-- Once the repo has a GitHub remote, `land-main.sh` pushes every turn, and a
-  push to `main` publishes the site.
+- The repo is public at github.com/Jneville0815/consulting-website.
+  `land-main.sh` pushes every turn, and a push to `main` publishes the site.
+- jimmyneville.com moved here from the `coaching-website` repo on 2026-11-02.
+  That repo no longer has a custom domain.
 - Keep the copy minimal and plain. Draft any new copy with `write-for-humans`.
 - Never name the technologies, platforms, or vendors behind client work
   anywhere on the site.
