@@ -486,7 +486,7 @@ p { margin: 0; }
 .faq details p { padding: 0 24px 24px; max-width: 680px; font-size: 16px; line-height: 1.65; color: var(--ink-2); }
 
 /* Contact */
-.contact { border-top: 1px solid var(--line); }
+.contact { background: var(--green-deep); color: var(--bg); }
 .contact-inner {
   padding-top: 112px;
   padding-bottom: 112px;
@@ -502,10 +502,16 @@ p { margin: 0; }
   line-height: 1.02;
   letter-spacing: -0.025em;
   text-wrap: balance;
+  color: var(--bg);
 }
-.contact p { max-width: 520px; font-size: 18px; line-height: 1.6; color: var(--ink-2); }
+.contact h2 em { color: var(--gold); }
+.contact p { max-width: 520px; font-size: 18px; line-height: 1.6; color: var(--pale); }
 .contact .btn { margin-top: 6px; }
-.contact-alt { font-size: 14px; color: var(--ink-3); }
+.contact .btn-solid { background: var(--gold); color: var(--ink); }
+.contact .btn-solid:hover { background: var(--amber); color: var(--ink); }
+.contact-alt { font-size: 14px; color: var(--pale); }
+.contact-alt a { color: var(--gold); }
+.contact-alt a:hover { color: var(--bg); }
 
 /* Footer */
 .site-footer { border-top: 1px solid var(--line); }
