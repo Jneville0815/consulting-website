@@ -271,16 +271,15 @@ p { margin: 0; }
   transition: transform .25s ease, box-shadow .25s ease;
 }
 .service:hover { transform: translate(-3px, -3px); box-shadow: 6px 6px 0 var(--green); }
-.icon-tile {
-  width: 56px;
-  height: 56px;
-  display: grid;
-  place-items: center;
-  border: 1px solid var(--ink);
-  background: #FFFFFF;
-  color: var(--green);
-  margin-bottom: 8px;
-}
+.service-art { flex: none; margin-bottom: 8px; }
+.service-art .blink, .service-art .eye { transform-box: fill-box; transform-origin: center; }
+.service-art .flow { stroke-dasharray: 6 4; }
+.service:hover .service-art .blink { animation: blink 1s steps(1) infinite; }
+.service:hover .service-art .eye { animation: eye-blink 2.4s ease-in-out infinite; }
+.service:hover .service-art .flow { animation: dash .8s linear infinite; }
+@keyframes blink { 50% { opacity: 0; } }
+@keyframes eye-blink { 0%, 88%, 100% { transform: scaleY(1); } 94% { transform: scaleY(0.15); } }
+@keyframes dash { to { stroke-dashoffset: -10; } }
 .service h3 { font-size: 32px; line-height: 1.1; }
 .service > p { font-size: 16px; line-height: 1.6; color: var(--ink-2); }
 .service .lettered { margin-top: auto; padding-top: 18px; border-top: 1px solid var(--line); }
