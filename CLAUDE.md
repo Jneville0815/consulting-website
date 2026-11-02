@@ -20,7 +20,7 @@ Every tracked path in this repo.
 | `README.md` | How to preview the site locally |
 | `_config.yml` | Keeps `CLAUDE.md`, `MEMORY.md`, and `README.md` off the published site |
 | `favicon.svg` | The tab icon: a cream J on green with an amber dot |
-| `img/` | Site images. `jimmy.jpg` is the About photo, cropped to 4:5 with its location data stripped |
+| `img/` | Site images. `jimmy.jpg` is the About photo, cropped to 4:5 with its location data stripped. `og.png` is the 1200x630 link preview image |
 | `index.html` | The whole site |
 | `style.css` | All styles. Colors and fonts are tokens on `:root` |
 
