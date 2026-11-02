@@ -298,6 +298,7 @@ p { margin: 0; }
 }
 .row:hover { padding-left: 12px; }
 .row .num { flex: 0 0 88px; font-family: var(--serif); font-style: italic; font-size: 48px; line-height: 1; color: var(--green); }
+.row-art { flex: none; align-self: center; }
 .row h3 { flex: 1 1 280px; font-size: 30px; line-height: 1.2; }
 .row p { flex: 1 1 420px; font-size: 17px; line-height: 1.6; color: var(--ink-2); }
 
