@@ -1,0 +1,4 @@
+exclude:
+  - CLAUDE.md
+  - MEMORY.md
+  - README.md
