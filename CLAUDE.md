@@ -29,7 +29,7 @@ Every tracked path in this repo.
 - The repo is public at github.com/Jneville0815/consulting-website.
   `land-main.sh` pushes every turn, and a push to `main` publishes the site.
 - jimmyneville.com moved here from the `coaching-website` repo on 2026-11-02.
-  That repo no longer has a custom domain.
+  That repo is now private and unpublished.
 - Keep the copy minimal and plain. Draft any new copy with `write-for-humans`.
 - Never name the technologies, platforms, or vendors behind client work
   anywhere on the site.
