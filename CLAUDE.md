@@ -14,7 +14,7 @@ Every tracked path in this repo.
 | --- | --- |
 | `.claude/settings.json` | Hook wiring. Which shared script runs on which event |
 | `.claude/skills/` | This repo's own skills, and one symlink per shared skill in project-core |
-| `CLAUDE.md` | This file. What the repo is, its guardrails, and this Map |
+| `CLAUDE.md` | This file. What the repo is, its guardrails, this Map, and the reference sites |
 | `CNAME` | The custom domain GitHub Pages serves. Do not remove it |
 | `MEMORY.md` | The Memory queue: proposed changes, drained by `/review-memory` |
 | `README.md` | How to preview the site locally |
@@ -34,3 +34,13 @@ Every tracked path in this repo.
 - Never name the technologies, platforms, or vendors behind client work
   anywhere on the site.
 - Strip location data from any photo before adding it to `img/`.
+
+## Reference sites
+
+Jimmy used these sites as references when building this one.
+
+- https://n8nlab.io/
+- https://osher.com.au/
+- https://www.xray.tech/
+- https://leftclick.ai/
+- https://joshuaberkowitz.us/software-automation-services
