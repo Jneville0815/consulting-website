@@ -459,16 +459,9 @@ p { margin: 0; }
   flex-direction: column;
   gap: 20px;
 }
+.stars { display: flex; gap: 4px; color: var(--amber); }
+.stars svg { fill: currentColor; }
 .review blockquote { margin: 0; }
-.review blockquote::before {
-  content: "\201C";
-  display: block;
-  height: 32px;
-  font-family: var(--serif);
-  font-size: 72px;
-  line-height: 1;
-  color: var(--amber);
-}
 .review blockquote p { font-family: var(--serif); font-size: 20px; line-height: 1.45; color: var(--ink); text-wrap: pretty; }
 .review figcaption { display: flex; flex-direction: column; gap: 2px; padding-top: 14px; border-top: 1px solid var(--line); }
 .review figcaption strong { font-size: 15px; font-weight: 600; color: var(--ink); }
